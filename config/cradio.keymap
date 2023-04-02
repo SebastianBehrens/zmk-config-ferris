@@ -18,7 +18,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <70>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -124,21 +124,21 @@
             >;
         };
 
-//        tri_layer {
-//            bindings = <
-//        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-//        //│ RESET    │          │          │          |          │   │ CLEAR BT │          │          │          │  RESET   │
-//            &reset     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &reset
-//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//        //│BOOTLOADER│          │          │          |          │   │          │Profile 4 │Profile 5 │          │BOOTLOADER│
-//          &bootloader  &none      &none      &none     &none           &none   &bt BT_SEL 4 &bt BT_SEL 5 &none     &bootloader
-//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-//        //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
-//            &none      &none      &none     &none        &none         &none     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none 
-//        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-//                                             &none      &none          &none      &none 
-//        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-//            >;
-//        };
+        tri_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│ RESET    │          │          │          |          │   │ CLEAR BT │          │          │          │  RESET   │
+            &reset     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &reset
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│BOOTLOADER│          │          │          |          │   │          │Profile 4 │Profile 5 │          │BOOTLOADER│
+          &bootloader  &none      &none      &none     &none           &none   &bt BT_SEL 4 &bt BT_SEL 5 &none     &bootloader
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
+            &none      &none      &none     &none        &none         &none     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none 
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &none      &none          &none      &none 
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
     };
 };
