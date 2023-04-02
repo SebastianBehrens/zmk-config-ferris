@@ -83,7 +83,7 @@
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &LS(MINUS) LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              B
-                                             &none      &lt3 ESCAPE        &none      &none 
+                                             &none      &lt 3 ESCAPE        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -108,7 +108,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &none      &none     &none      &none      &mo4           &none      &kp PG_UP     &none     &none   &none 
+            &none      &none     &none      &none      &mo 4           &none      &kp PG_UP     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
