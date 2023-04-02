@@ -84,8 +84,7 @@
         //│ <        │  >       │  8       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             //&none      &lt 3 ESCAPE        &none      &none 
-                                             &none      &kp ESCAPE        &none      &none 
+                                             &none      &lt 3 ESCAPE        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             >;
