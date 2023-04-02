@@ -79,7 +79,7 @@
             &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp LS(LA(N7)) &kp LS(N0) &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  {       │  [       │  (       │          │   │     '    │    )     │  ]       │     }    │  '       │
-           &none   &kp LA(N8) &kp LA(N5) &kp LS(N9) & LA(G)        &kp MINUS  &kp LS(KC_9) &kp LA(N_6) &kp LA(N9) &kp MINUS
+           &none   &kp LA(N8) &kp LA(N5) &kp LS(N9) &kp LA(G)        &kp MINUS  &kp LS(KC_9) &kp LA(N_6) &kp LA(N9) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ <        │  >       │  8       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &LS(MINUS) LS(RBKT) &kp BSLH
