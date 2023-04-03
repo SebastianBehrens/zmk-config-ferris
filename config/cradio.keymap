@@ -8,6 +8,9 @@
 // Home row mods macro
 #define HRML(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3
 #define HRMR(k1,k2,k3) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3
+&sl {
+    release-after-ms = <500>;
+};
 
 / {
 
@@ -16,7 +19,7 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <220>;
             quick-tap-ms = <70>;
             global-quick-tap;
@@ -66,8 +69,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lt 2 BSPC &sk LSHIFT     &kp SPACE  &lt 1 ENTER
-                                            //&kp BSPC &sk LSHIFT     &kp SPACE  &kp ENTER
+                                            &lt 2 BSPC &sk LSHIFT     &kp SPACE  &sl 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -84,7 +86,7 @@
         //│ <        │  >       │  8       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &lt 3 ESCAPE        &none      &none 
+                                             &kp TAB      &lt 3 ESCAPE        &none      &kp ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             >;
