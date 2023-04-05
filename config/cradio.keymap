@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <70>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -34,6 +34,17 @@
            release-after-ms = <700>;
            quick-release;
             };
+            // global quick tap to improve home row mod behavior ior when typing fast
+      gqt: global-quick-tap { 
+           compatible = "zmk,behavior-hold-tap";
+           label = "GLOBAL_QUICK_TAP";
+           #binding-cells = <2>;
+           flavor = "tap-preferred";
+           tapping-term-ms = <200>;
+           quick-tap-ms = <125>;
+           global-quick-tap;
+           bindings = <&kp>, <&kp>;
+        };
     };
 
 //    combos {
@@ -54,6 +65,8 @@
 //        };
 //    };
 
+
+// LAYER 0
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -74,24 +87,25 @@
             >;
         };
 
+// LAYER 1
         symbols {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ +        │  "       │ \#       │  %       │    &     │   │   \`     │   /      │   \      │   =      │ caret tbd|
             &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp LS(LA(N7)) &kp LS(N0) &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  {       │  [       │  (       │          │   │     '    │    )     │  ]       │     }    │  '       │
-           &none   &kp LA(N8) &kp LA(N5) &kp LS(N9) &kp LA(G)        &kp MINUS  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
+        //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
+           &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ <        │  >       │  8       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
+        //│ <        │  >       │  *       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp TAB      &lt 3 ESCAPE        &none      &kp ENTER 
+                                             &kp ESCAPE &lt 3 TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-
             >;
         };
 
+// LAYER 2
         numbersandstuff {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -99,16 +113,17 @@
             &none      &none     &none      &none      &none          &none      &kp N7     &kp N8     &kp N9   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │ ä        │   ö      │   ü      │          │   │          │  4       │  5       │  6       │          │
-           &none      &kp DQT     &kp SEMI     &kp LBKT  &none         &none &kp N4     &kp N5     &kp N6     &kp DOT
+           &caps_word      &kp DQT     &kp SEMI     &kp LBKT  &none         &none &kp N4     &kp N5     &kp N6     &kp DOT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  1       │   2      │    3     │          │
             &none      &none      &none      &none      &none          &trans     &kp N1    &kp N2     &kp N3     &kp COMMA
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &none      &kp N0
+                                             &none      &none          &kp ENTER      &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
+// LAYER 3
         vim {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -126,6 +141,7 @@
             >;
         };
 
+// LAYER 4
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
