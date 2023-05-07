@@ -82,7 +82,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lt 2 BSPC &sk LSHIFT     &kp SPACE  &sl 1
+                                            &lt 2 BSPC &lt 5 sk LSHIFT     &kp SPACE  &sl 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -164,15 +164,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &none      &none     &none      &none      &mo 4           &none      &kp PG_UP     &none     &none   &none 
+            &none      &none     &none      &none      &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
+           &none      &none      &none     &none       &none         &none    &none   &none    &none  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none      &none          &none      &kp N1    &kp N2     &kp N3     &kp COMMA
+            &none      &none      &none      &none      &none          &none      &none    &none     &none     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &none      &kp N0
+                                             &none      &none          &none      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
