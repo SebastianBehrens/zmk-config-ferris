@@ -141,7 +141,7 @@
            &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ <        │  >       │  *       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
-           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
+           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none    &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp ESCAPE &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
