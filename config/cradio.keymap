@@ -65,6 +65,27 @@
 //        };
 //    };
 
+    macros {
+        sql_comment: sql_comment {
+            label = "sql_comment";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap LC(K)>
+                , <&macro_tap LC(C)>
+                ;
+        };
+        sql_uncomment: sql_uncomment {
+            label = "sql_uncomment";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap LC(K)>
+                , <&macro_tap LC(U)>
+                ;
+        };
+    };
+};
 
 // LAYER 0
     keymap {
@@ -164,7 +185,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &none      &none     &none      &kp LC(Y)      &none           &none      &none     &none     &none   &none 
+            &none      &sql_uncomment     &kp sql_comment      &kp LC(Y)      &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp ENTER      &kp F5      &kp LC(V) &kp LA(TAB)  &kp BSPC         &none    &none   &none    &none  &none 
