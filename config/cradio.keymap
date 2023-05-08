@@ -137,6 +137,37 @@
                 , <&macro_tap &kp CAPS>
                 ;
         };
+        MYCARET: MYCARET {
+            label = "MYCARET";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp EQUAL>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
+        MYTILDEMAC: MYTILDEMAC {
+            label = "MYTILDEMAC";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp N>
+                , <&macro_release &kp RALT>
+                = <&macro_tap &kp SPACE>
+                ;
+        };
+        MYTILDEWIN: MYTILDEWIN {
+            label = "MYTILDEWIN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp EQUAL>
+                , <&macro_release &kp RALT>
+                = <&macro_tap &kp SPACE>
+                ;
+        };
     };
 
 // LAYER 0
@@ -170,8 +201,8 @@
         //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
            &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ <        │  >       │  *       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
-           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none    &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
+        //│ <        │  >       │  *       │  9       │  0       │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
+           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none    &kp N0         &MYTILDEMAC      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp ESCAPE &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -255,14 +286,14 @@
         symbols2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ +        │  "       │ \#       │  %       │    &     │   │   \`     │   /      │   \      │   =      │ caret tbd|
-            &kp LS(N1) &kp LS(N2) &kp RA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp RA(NUBS) &kp LS(N0) &kp EQUAL 
+        //│ +        │  "       │ \#       │  %       │    &     │   │   \`     │   /      │   \      │   =      │ caret    |
+            &kp LS(N1) &kp LS(N2) &kp RA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp RA(NUBS) &kp LS(N0) &MYCARET
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
            &none   &kp RA(SQT) &kp RA(LBKT) &kp LS(N8) &kp RA(N2)        &none  &kp RS(N9) &kp RA(RBKT) &kp RA(NUHS) &kp RA(MINUS)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ <        │  >       │  *       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
-           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none   &none         &kp RA(EQUAL)      &kp RA(N7)   &kp RS(MINUS) &kp RS(RBKT) &ht LSHIFT NUHS
+        //│ <        │  >       │  *       │  9       │  0       │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
+           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none   &none         &MYTILDEWIN      &kp RA(N7)   &kp RS(MINUS) &kp RS(RBKT) &ht LSHIFT NUHS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
