@@ -59,7 +59,7 @@
 
 //    conditional_layers {
 //        compatible = "zmk,conditional-layers";
-//        tri_layer {
+//        bt_layer {
 //            if-layers = <1 2>;
 //            then-layer = <3>;
 //        };
@@ -157,9 +157,9 @@
                                              &none      &none          &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        };
+        # };
 
-//// LAYER 5
+// // LAYER 5
 //        onewin {
 //            bindings = <
 //        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
