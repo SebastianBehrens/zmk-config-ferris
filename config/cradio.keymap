@@ -134,7 +134,7 @@
         //│ <        │  >       │  *       │  9       │  0       │   │ tilde tbd│  pipe    │  ?       │     !    │  $       │     
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &kp N9   &kp N0         &none      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp ESCAPE &lt 3 TAB        &none      &none 
+                                             &kp ESCAPE &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
