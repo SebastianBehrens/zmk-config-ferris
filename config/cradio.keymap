@@ -313,8 +313,7 @@
             &none      &none     &none      &none      &none           &none      &none     &none   &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           //&none      &none      &none     &none       &none         &kp HOME    &kp LC(END)   &kp LC(HOME)    &kp END  &none 
-            &none      &none     &none      &none      &none           &none      &none     &none   &none   &none 
+           &none      &none      &none     &none       &none         &kp HOME    &kp LC(END)   &kp LC(HOME)    &kp END  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &none      &none      &none      &none      &none          &none      &none    &none     &none     &none
