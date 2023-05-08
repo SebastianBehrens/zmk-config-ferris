@@ -128,12 +128,12 @@
                 ;
         };
         CAPITALUE: CAPITALUE {
-            label = "CAPITALOE";
+            label = "CAPITALUE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CAPS>
-                , <&macro_tap &kp SEMI>
+                , <&macro_tap &kp LBKT>
                 , <&macro_tap &kp CAPS>
                 ;
         };
