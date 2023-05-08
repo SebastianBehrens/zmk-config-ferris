@@ -137,7 +137,6 @@
                 , <&macro_tap &kp CAPS>
                 ;
         };
-        LBKT
     };
 
 // LAYER 0
