@@ -170,7 +170,7 @@
            &kp ENTER      &kp F5      &kp LC(V) &kp LA(TAB)  &kp BSPC         &none    &none   &none    &none  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp SPACE      &kp LC(X)      &kp LC(C)      &DEL      &none          &none      &none    &none     &none     &none
+            &kp SPACE      &kp LC(X)      &kp LC(C)      &kp DEL      &none          &none      &none    &none     &none     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &none          &none      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
