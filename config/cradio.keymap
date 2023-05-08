@@ -71,8 +71,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap LC(K)>
-                , <&macro_tap LC(C)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp K>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
                 ;
         };
         sql_uncomment: sql_uncomment {
@@ -80,8 +82,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap LC(K)>
-                , <&macro_tap LC(U)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp K>
+                , <&macro_tap &kp U>
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -184,7 +188,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &none      &sql_uncomment     &kp sql_comment      &kp LC(Y)      &none           &none      &none     &none     &none   &none 
+            &none      &sql_uncomment     &sql_comment      &kp LC(Y)      &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp ENTER      &kp F5      &kp LC(V) &kp LA(TAB)  &kp BSPC         &none    &none   &none    &none  &none 
