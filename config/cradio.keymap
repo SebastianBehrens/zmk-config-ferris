@@ -98,6 +98,15 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+        numpadcomma: numpadcomma {
+            label = "numpadcomma";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp COMMA>
+                , <&macro_tap &kp C>
+                ;
+        };
     };
 
 // LAYER 0
