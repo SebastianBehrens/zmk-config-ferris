@@ -25,6 +25,16 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+        
+        cht: custom_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "nested_ht_with_sk";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&mo>, <&sk>;
+        };
 
       skq: sticky_key_quick_release {
            compatible = "zmk,behavior-sticky-key";
@@ -106,7 +116,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lt 2 BSPC &lt 5 LSHIFT     &kp SPACE  &lt 1 ESCAPE
+                                            &lt 2 BSPC &cht 5 LSHIFT     &kp SPACE  &lt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
