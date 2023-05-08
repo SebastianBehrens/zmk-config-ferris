@@ -31,6 +31,7 @@
             label = "nested_ht_with_sk";
             #binding-cells = <2>;
             tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-release;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&mo>, <&sk>;
