@@ -196,7 +196,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ +        │  "       │ \#       │  %       │    &     │   │   \`     │   /      │   \      │   =      │ caret tbd|
-            &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp LS(LA(N7)) &kp LS(N0) &none 
+            &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp LS(LA(N7)) &kp LS(N0) &MYCARET 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
            &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
