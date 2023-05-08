@@ -6,7 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3) &lt 3 k1  &ht LALT k2  &ht LGUI k3
+//#define HRML(k1,k2,k3) &lt 3 k1  &ht LALT k2  &ht LGUI k3
+#define HRML(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3
 #define HRMR(k1,k2,k3) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3
 &sl {
     release-after-ms = <500>;
