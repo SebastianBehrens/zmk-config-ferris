@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp COMMA>
-                , <&macro_tap &kp C>
+                , <&macro_tap &kp SPACE>
                 ;
         };
     };
