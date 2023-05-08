@@ -154,7 +154,7 @@
                 = <&macro_press &kp RALT>
                 , <&macro_tap &kp N>
                 , <&macro_release &kp RALT>
-                = <&macro_tap &kp SPACE>
+                , <&macro_tap &kp SPACE>
                 ;
         };
         MYTILDEWIN: MYTILDEWIN {
@@ -165,7 +165,7 @@
                 = <&macro_press &kp RALT>
                 , <&macro_tap &kp EQUAL>
                 , <&macro_release &kp RALT>
-                = <&macro_tap &kp SPACE>
+                , <&macro_tap &kp SPACE>
                 ;
         };
     };
