@@ -107,6 +107,37 @@
                 , <&macro_tap &kp SPACE>
                 ;
         };
+        CAPITALAE: CAPITALAE {
+            label = "CAPITALAE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp CAPS>
+                , <&macro_tap &kp SQT>
+                , <&macro_tap &kp CAPS>
+                ;
+        };
+        CAPITALOE: CAPITALOE {
+            label = "CAPITALOE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp CAPS>
+                , <&macro_tap &kp SEMI>
+                , <&macro_tap &kp CAPS>
+                ;
+        };
+        CAPITALUE: CAPITALUE {
+            label = "CAPITALOE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp CAPS>
+                , <&macro_tap &kp SEMI>
+                , <&macro_tap &kp CAPS>
+                ;
+        };
+        LBKT
     };
 
 // LAYER 0
@@ -153,10 +184,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │  7       │  8       │  9       │         │
-            &to 5      &none     &none      &none      &none          &none      &kp N7     &kp N8     &kp N9   &none 
+            &to 5      &CAPITALAE     &CAPITALOE      &CAPITALUE      &none          &none      &kp N7     &kp N8     &kp N9   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │ ä        │   ö      │   ü      │          │   │          │  4       │  5       │  6       │          │
-           &caps_word      &kp DQT     &kp SEMI     &kp LBKT  &none         &none &kp N4     &kp N5     &kp N6     &kp DOT
+           &caps_word      &kp SQT     &kp SEMI     &kp LBKT  &none         &none &kp N4     &kp N5     &kp N6     &kp DOT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  1       │   2      │    3     │          │
             &none      &none      &none      &none      &none          &none     &kp N1    &kp N2     &kp N3     &numpadcomma
@@ -244,10 +275,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │  7       │  8       │  9       │         │
-            &none      &none     &none      &none      &none          &none      &kp N7     &kp N8     &kp N9   &none 
+            &to 0      &CAPITALAE     &CAPITALOE      &CAPITALUE      &none          &none      &kp N7     &kp N8     &kp N9   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │ ä        │   ö      │   ü      │          │   │          │  4       │  5       │  6       │          │
-           &caps_word      &kp DQT     &kp SEMI     &kp LBKT  &none         &none &kp N4     &kp N5     &kp N6     &kp DOT
+           &caps_word      &kp SQT     &kp SEMI     &kp LBKT  &none         &none &kp N4     &kp N5     &kp N6     &kp DOT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │  1       │   2      │    3     │          │
             &none      &none      &none      &none      &none          &none     &kp N1    &kp N2     &kp N3     &numpadcomma
