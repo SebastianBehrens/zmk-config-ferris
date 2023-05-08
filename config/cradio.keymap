@@ -83,7 +83,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lt 2 BSPC &lt 5 &sk LSHIFT     &kp SPACE  &lt 1 ESCAPE
+                                            &lt 2 BSPC &sk LSHIFT     &kp SPACE  &lt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
