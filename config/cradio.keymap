@@ -168,6 +168,15 @@
                 , <&macro_tap &kp SPACE>
                 ;
         };
+        MYCODEDELIM:  MYCODEDELIM {
+            label = "MYCODEDELIM";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RS(EQUAL)>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
     };
 
 // LAYER 0
@@ -196,7 +205,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ +        │  "       │ \#       │  %       │    &     │   │   \`     │   /      │   \      │   =      │ caret tbd|
-            &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp LS(LA(N7)) &kp LS(N0) &MYCARET 
+            &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(N5)  &kp LS(N6)    &MYCODEDELIM  &kp LS(N7)  &kp LS(LA(N7)) &kp LS(N0) &MYCARET 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
            &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
@@ -287,7 +296,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ +        │  "       │ \#       │  %       │    &     │   │   \`     │   /      │   \      │   =      │ caret    |
-            &kp LS(N1) &kp LS(N2) &kp RA(N3) &kp LS(N5)  &kp LS(N6)    &kp RS(EQUAL) &kp LS(N7)  &kp RA(NUBS) &kp LS(N0) &MYCARET
+            &kp LS(N1) &kp LS(N2) &kp RA(N3) &kp LS(N5)  &kp LS(N6)    &MYCODEDELIM  &kp LS(N7)  &kp RA(NUBS) &kp LS(N0) &MYCARET
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
            &none   &kp RA(SQT) &kp RA(LBKT) &kp LS(N8) &kp RA(N2)        &none  &kp RS(N9) &kp RA(RBKT) &kp RA(NUHS) &kp RA(MINUS)
