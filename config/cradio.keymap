@@ -204,7 +204,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lqt 2 BSPC &skq LSHIFT     &cht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
+                                            &lqt 2 BSPC &skq LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
