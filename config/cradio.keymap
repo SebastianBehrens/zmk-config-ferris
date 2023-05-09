@@ -56,7 +56,7 @@
         //custom hold tap for layer tap - lt
       lqt: layer-quick-tap { 
            compatible = "zmk,behavior-hold-tap";
-           label = LAYER_QUICK_TAP";
+           label = "LAYER_QUICK_TAP";
            #binding-cells = <2>;
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
