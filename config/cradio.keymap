@@ -25,7 +25,6 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        
         cht: custom_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "nested_ht_with_sk";
@@ -35,7 +34,6 @@
             flavor = "balanced";
             bindings = <&mo>, <&skq>;
         };
-
       skq: sticky_key_quick_release {
            compatible = "zmk,behavior-sticky-key";
            label = "STICKY_KEY_QUICK_RELEASE";
@@ -54,6 +52,17 @@
            quick-tap-ms = <125>;
            global-quick-tap;
            bindings = <&kp>, <&kp>;
+        };
+        //custom hold tap for layer tap - lt
+      lqt: layer-quick-tap { 
+           compatible = "zmk,behavior-hold-tap";
+           label = LAYER_QUICK_TAP";
+           #binding-cells = <2>;
+           flavor = "hold-preferred";
+           tapping-term-ms = <200>;
+           quick-tap-ms = <125>;
+           global-quick-tap; // maybe not
+           bindings = <&mo>, <&kp>;
         };
     };
 
@@ -195,7 +204,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lt 2 BSPC &skq LSHIFT     &cht LC(LA(LSHIFT)) SPACE  &lt 1 ESCAPE
+                                            &lqt 2 BSPC &skq LSHIFT     &cht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
