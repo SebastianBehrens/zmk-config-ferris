@@ -25,6 +25,17 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+        //cmt: custom-mod-tap {
+        //    label = "custom-mod-tap;
+        //    compatible = "zmk,behavior-hold-tap";
+        //    #binding-cells = <2>;
+        //    flavor = "tap-preferred";
+        //    tapping-term-ms = <150>;
+        //    quick-tap-ms = <120>;
+        //    global-quick-tap;
+        //    bindings = <&kp>, <&kp>;
+        //};
+        // issue: when typing thumb cluster layer after shortly typing any character - the base layer is triggered
         cht: custom_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "nested_ht_with_sk";
@@ -61,7 +72,6 @@
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
            quick-tap-ms = <125>;
-           global-quick-tap; // maybe not
            bindings = <&mo>, <&kp>;
         };
     };
