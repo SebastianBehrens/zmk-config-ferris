@@ -186,10 +186,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Z       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+            &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &ht RCTR U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
-            &kp A       HRML(S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L)   &kp LS(N2)
+            &kp A      &lt 3 S  &ht LALT D &ht LGUI F      &kp G          &kp H      &ht RGUI J &ht RALT K  &kp L   &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
