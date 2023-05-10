@@ -185,46 +185,46 @@
                 , <&macro_tap &kp SPACE>
                 ;
         };
-        bt_macro_mac: bt_macro_mac {
-            label = "bt_macro_mac";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_wait_time 500>
-                , <&macro_tap &bt BT_SEL 1>
-                ;
-        };
-        bt_macro_win: bt_macro_win {
-            label = "bt_macro_win";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &to 5>
-                , <&macro_wait_time 500>
-                , <&macro_tap &bt BT_SEL 4>
-                ;
-        };
-        bt_macro_iphone: bt_macro_iphone {
-            label = "bt_macro_iphone";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_wait_time 500>
-                , <&macro_tap &bt BT_SEL 3>
-                ;
-        };
-        bt_macro_ipad: bt_macro_ipad {
-            label = "bt_macro_ipad";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &to 0>
-                , <&macro_wait_time 500>
-                , <&macro_tap &bt BT_SEL 2>
-                ;
-        };
+//        bt_macro_mac: bt_macro_mac {
+//            label = "bt_macro_mac";
+//            compatible = "zmk,behavior-macro";
+//            #binding-cells = <0>;
+//            bindings
+//                = <&macro_tap &to 0>
+//                , <&macro_wait_time 500>
+//                , <&macro_tap &bt BT_SEL 1>
+//                ;
+//        };
+//        bt_macro_win: bt_macro_win {
+//            label = "bt_macro_win";
+//            compatible = "zmk,behavior-macro";
+//            #binding-cells = <0>;
+//            bindings
+//                = <&macro_tap &to 5>
+//                , <&macro_wait_time 500>
+//                , <&macro_tap &bt BT_SEL 4>
+//                ;
+//        };
+//        bt_macro_iphone: bt_macro_iphone {
+//            label = "bt_macro_iphone";
+//            compatible = "zmk,behavior-macro";
+//            #binding-cells = <0>;
+//            bindings
+//                = <&macro_tap &to 0>
+//                , <&macro_wait_time 500>
+//                , <&macro_tap &bt BT_SEL 3>
+//                ;
+//        };
+//        bt_macro_ipad: bt_macro_ipad {
+//            label = "bt_macro_ipad";
+//            compatible = "zmk,behavior-macro";
+//            #binding-cells = <0>;
+//            bindings
+//                = <&macro_tap &to 0>
+//                , <&macro_wait_time 500>
+//                , <&macro_tap &bt BT_SEL 2>
+//                ;
+//        };
     };
 
 // LAYER 0
@@ -302,18 +302,36 @@
             >;
         };
 
+//// LAYER 4
+//        bt_layer {
+//            bindings = <
+//        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//        //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
+//            &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
+//          &none  &none      &none      &none     &none           &none   &bt_macro_win &bt BT_SEL 5 &none     &none
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
+//            &none      &none      &none     &none        &none         &none     &bt_macro_mac &bt_macro_ipad &bt_macro_iphone &none 
+//        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+//                                             &none      &none          &none      &none 
+//        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+//            >;
+//        };
+
 // LAYER 4
-        bt_layer {
+        bt_layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
-            &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
+            &none     &none      &none      &none     &none          &bt BT_CLR &to 0      &none      &to 5       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
-          &none  &none      &none      &none     &none           &none   &bt_macro_win &bt BT_SEL 5 &none     &none
+          &none  &none      &none      &none     &none           &none   &bt BT_SEL 4 &bt BT_SEL 5 &none     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
-            &none      &none      &none     &none        &none         &none     &bt_macro_mac &bt_macro_ipad &bt_macro_iphone &none 
+            &none      &none      &none     &none        &none         &none     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &none          &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -429,18 +447,36 @@
             >;
         };
 
+//// LAYER 11
+//        bt_layer2 {
+//            bindings = <
+//        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+//        //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
+//            &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
+//          &none  &none      &none      &none     &none           &none   &bt_macro_win &bt BT_SEL 5 &none     &none
+//        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+//        //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
+//            &none      &none      &none     &none        &none         &none     &bt_macro_mac &bt_macro_ipad &bt_macro_iphone &none 
+//        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+//                                             &none      &none          &none      &none 
+//        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+//            >;
+//        };
+
 // LAYER 11
         bt_layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
-            &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
+            &none     &none      &none      &none     &none          &bt BT_CLR &to 0      &none      &to 5       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
-          &none  &none      &none      &none     &none           &none   &bt_macro_win &bt BT_SEL 5 &none     &none
+          &none  &none      &none      &none     &none           &none   &bt BT_SEL 4 &bt BT_SEL 5 &none     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
-            &none      &none      &none     &none        &none         &none     &bt_macro_mac &bt_macro_ipad &bt_macro_iphone &none 
+            &none      &none      &none     &none        &none         &none     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &none          &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
