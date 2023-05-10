@@ -197,7 +197,7 @@
             &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &ht RCTRL U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
-            &kp A      &lt 3 S  &ht LALT D &ht LGUI F      &kp G          &kp H      &ht RGUI J &ht RALT K  &kp L   &kp LS(N2)
+            &kp A      &lt 3 S  &ht LALT D &ht LGUI F      &ht LGUI(TAB) G          &kp H      &ht RGUI J &ht RALT K  &kp L   &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LSHIFT FSLH
@@ -288,7 +288,7 @@
             &kp Q      &kp W      &kp E     &ht LGUI R &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
-            &kp A      &lt 8 S  &ht LALT D &ht LCTRL F      &kp G          &kp H      &ht RCTRL J &ht RALT K  &ht RGUI L   &kp LS(N2)
+            &kp A      &lt 8 S  &ht LALT D &ht LCTRL F      &ht LA(TAB) G          &kp H      &ht RCTRL J &ht RALT K  &ht RGUI L   &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
