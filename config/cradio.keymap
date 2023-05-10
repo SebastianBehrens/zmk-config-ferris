@@ -190,7 +190,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &to 0>
+                = <&macro_tap &tog 0>
                 , <&macro_wait_time 500>
                 , <&macro_tap &bt BT_SEL 1>
                 ;
@@ -200,7 +200,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &to 5>
+                = <&macro_tap &tog 5>
                 , <&macro_wait_time 500>
                 , <&macro_tap &bt BT_SEL 4>
                 ;
@@ -210,7 +210,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &to 0>
+                = <&macro_tap &tog 0>
                 , <&macro_wait_time 500>
                 , <&macro_tap &bt BT_SEL 3>
                 ;
@@ -220,7 +220,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &to 0>
+                = <&macro_tap &tog 0>
                 , <&macro_wait_time 500>
                 , <&macro_tap &bt BT_SEL 2>
                 ;
