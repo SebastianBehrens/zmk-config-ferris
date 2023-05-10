@@ -306,11 +306,11 @@
         bt_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          |          │   │ CLEAR BT │          │          │          │  RESET   │
+        //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
             &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          |          │   │          │Profile 4 │Profile 5 │          │BOOTLOADER│
-          &bootloader  &none      &none      &none     &none           &none   &bt_macro_win &bt BT_SEL 5 &none     &bootloader
+        //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
+          &none  &none      &none      &none     &none           &none   &bt_macro_win &bt BT_SEL 5 &none     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
             &none      &none      &none     &none        &none         &none     &bt_macro_mac &bt_macro_ipad &bt_macro_iphone &none 
