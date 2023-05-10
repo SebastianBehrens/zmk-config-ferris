@@ -190,9 +190,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &bt BT_SEL 1>
+                = <&macro_tap &to 0>
                 , <&macro_wait_time 500>
-                , <&macro_tap &to 0>
+                , <&macro_tap &bt BT_SEL 1>
                 ;
         };
         bt_macro_win: bt_macro_win {
@@ -200,9 +200,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &bt BT_SEL 4>
+                = <&macro_tap &to 5>
                 , <&macro_wait_time 500>
-                , <&macro_tap &to 5>
+                , <&macro_tap &bt BT_SEL 4>
                 ;
         };
         bt_macro_iphone: bt_macro_iphone {
@@ -210,9 +210,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &bt BT_SEL 3>
+                = <&macro_tap &to 0>
                 , <&macro_wait_time 500>
-                , <&macro_tap &to 0>
+                , <&macro_tap &bt BT_SEL 3>
                 ;
         };
         bt_macro_ipad: bt_macro_ipad {
@@ -220,9 +220,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &bt BT_SEL 2>
+                = <&macro_tap &to 0>
                 , <&macro_wait_time 500>
-                , <&macro_tap &to 0>
+                , <&macro_tap &bt BT_SEL 2>
                 ;
         };
     };
