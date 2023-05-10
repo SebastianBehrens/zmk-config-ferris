@@ -200,7 +200,7 @@
             &kp A      &lt 3 S  &ht LALT D &ht LGUI F      &kp G          &kp H      &ht RGUI J &ht RALT K  &kp L   &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
                                             &lqt 2 BSPC &skq LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
