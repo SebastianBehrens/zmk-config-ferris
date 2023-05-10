@@ -325,7 +325,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
-            &none     &none      &none      &none     &none          &bt BT_CLR &to 0      &none      &to 5       &none
+            &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
           &none  &none      &none      &none     &none           &none   &bt BT_SEL 4 &bt BT_SEL 5 &none     &none
@@ -333,7 +333,7 @@
         //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
             &none      &none      &none     &none        &none         &none     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &none      &none 
+                                             &none      &none          &to 0      &to 5 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -470,7 +470,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          |          │   │ CLEAR BT │          │          │          │          │
-            &none     &none      &none      &none     &none          &bt BT_CLR &to 0      &none      &to 5       &none
+            &none     &none      &none      &none     &none          &bt BT_CLR &none      &none      &none       &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          |          │   │          │Profile 4 │Profile 5 │          │          │
           &none  &none      &none      &none     &none           &none   &bt BT_SEL 4 &bt BT_SEL 5 &none     &none
@@ -478,7 +478,7 @@
         //│          │          │          |          |          │   │          │Profile 1 │Profile 2 │Profile 3 │          │
             &none      &none      &none     &none        &none         &none     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &none      &none 
+                                             &none      &none          &to 0      &to 5 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
