@@ -416,7 +416,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &none      &sql_uncomment     &sql_comment      &kp LC(Y)      &none           &none      &none     &none     &none   &none 
+            &sql_uncomment     &sql_comment &kp LS(LG(S))      &kp LC(Y)      &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp ENTER      &kp F5      &kp LC(V) &kp LA(TAB)  &kp BSPC         &none    &none   &none    &none  &none 
