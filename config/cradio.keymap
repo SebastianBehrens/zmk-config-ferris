@@ -191,6 +191,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &bt BT_SEL 1>
+                , <&macro_wait_time 500>
                 , <&macro_tap &to 0>
                 ;
         };
@@ -200,6 +201,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &bt BT_SEL 4>
+                , <&macro_wait_time 500>
                 , <&macro_tap &to 5>
                 ;
         };
@@ -209,6 +211,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &bt BT_SEL 3>
+                , <&macro_wait_time 500>
                 , <&macro_tap &to 0>
                 ;
         };
@@ -218,6 +221,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &bt BT_SEL 2>
+                , <&macro_wait_time 500>
                 , <&macro_tap &to 0>
                 ;
         };
