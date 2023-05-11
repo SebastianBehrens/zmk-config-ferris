@@ -295,7 +295,7 @@
            &none      &none      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none      &none          &kp LG(LEFT)      &kp LG(HOME)    &kp LG(END)     &kp LG(RIGHT)     &kp COMMA
+            &kp LSHIFT      &none      &none      &none      &none          &kp LG(LEFT)      &kp LG(HOME)    &kp LG(END)     &kp LG(RIGHT)     &kp COMMA
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &none          &none      &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -404,7 +404,7 @@
            &none      &none      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none      &none          &kp LA(LEFT)      &none    &none     &kp LA(RIGHT)     &kp COMMA
+            &kp LSHIFT      &none      &none      &none      &none          &kp LA(LEFT)      &none    &none     &kp LA(RIGHT)     &kp COMMA
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &mo 9      &none          &none      &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
