@@ -297,7 +297,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LSHIFT      &none      &none      &none      &none          &kp LG(LEFT)      &kp LG(HOME)    &kp LG(END)     &kp LG(RIGHT)     &kp COMMA
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &none      &kp N0
+                                             &none      &none          &kp ENTER      &kp LG(ENTER)
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
