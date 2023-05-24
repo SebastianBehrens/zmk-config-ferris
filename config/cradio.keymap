@@ -63,18 +63,18 @@
            quick-tap-ms = <125>;
            bindings = <&mo>, <&kp>;
         };
-      lqt_td: layer-quick-tap { 
+      lqt_td: layer-quick-tap-tap-dance { 
            compatible = "zmk,behavior-hold-tap";
-           label = "LAYER_QUICK_TAP";
+           label = "LAYER_QUICK_TAP_TAP_DANCE";
            #binding-cells = <2>;
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
            quick-tap-ms = <125>;
            bindings = <&mo>, <&td1>;
         };
-      lqt_td2: layer-quick-tap { 
+      lqt_td2: layer-quick-tap-tap-dance2 { 
            compatible = "zmk,behavior-hold-tap";
-           label = "LAYER_QUICK_TAP";
+           label = "LAYER_QUICK_TAP_TAP_DANCE2";
            #binding-cells = <2>;
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
