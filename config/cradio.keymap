@@ -69,7 +69,7 @@
            #binding-cells = <2>;
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
-           quick-tap-ms = <125>;
+           quick-tap-ms = <225>;
            bindings = <&mo>, <&td1>;
         };
       lqt_td2: layer-quick-tap-tap-dance2 { 
@@ -78,14 +78,14 @@
            #binding-cells = <2>;
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
-           quick-tap-ms = <125>;
+           quick-tap-ms = <225>;
            bindings = <&mo>, <&td2>;
         };
       td1: td1 {
            compatible = "zmk,behavior-tap-dance";
            label = "td_left_thumb_1";
            #binding-cells = <0>;
-           tapping-term-ms = <100>;
+           tapping-term-ms = <200>;
            bindings =
            <&kp BSPC>, <&kp LA(BSPC)>;
           };
@@ -93,7 +93,7 @@
            compatible = "zmk,behavior-tap-dance";
            label = "td_left_thumb_2";
            #binding-cells = <0>;
-           tapping-term-ms = <100>;
+           tapping-term-ms = <200>;
            bindings =
            <&kp BSPC>, <&kp LC(BSPC)>;
           };
