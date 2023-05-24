@@ -63,13 +63,31 @@
            quick-tap-ms = <125>;
            bindings = <&mo>, <&kp>;
         };
+      lqt_td: layer-quick-tap { 
+           compatible = "zmk,behavior-hold-tap";
+           label = "LAYER_QUICK_TAP";
+           #binding-cells = <2>;
+           flavor = "hold-preferred";
+           tapping-term-ms = <200>;
+           quick-tap-ms = <125>;
+           bindings = <&mo>, <&td1>;
+        };
+      lqt_td2: layer-quick-tap { 
+           compatible = "zmk,behavior-hold-tap";
+           label = "LAYER_QUICK_TAP";
+           #binding-cells = <2>;
+           flavor = "hold-preferred";
+           tapping-term-ms = <200>;
+           quick-tap-ms = <125>;
+           bindings = <&mo>, <&td2>;
+        };
       td1: td1 {
            compatible = "zmk,behavior-tap-dance";
            label = "td_left_thumb_1";
            #binding-cells = <0>;
            tapping-term-ms = <100>;
            bindings =
-           <&lqt 2 BSPC>, <&kp LA(BSPC)>;
+           <&kp BSPC>, <&kp LA(BSPC)>;
           };
       td2: td2 {
            compatible = "zmk,behavior-tap-dance";
@@ -77,7 +95,7 @@
            #binding-cells = <0>;
            tapping-term-ms = <100>;
            bindings =
-           <&lqt 7 BSPC>, <&kp LC(BSPC)>;
+           <&kp BSPC>, <&kp LC(BSPC)>;
           };
     };
 
@@ -259,7 +277,7 @@
             &ht LSHIFT Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &td1 &skq LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
+                                            &lqt_td 2 0 &skq LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -370,7 +388,7 @@
             &ht LSHIFT Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &td2 &cht 10 LSHIFT     &kp SPACE  &lqt 6 ESCAPE
+                                            &lqt_td2 7 0 &cht 10 LSHIFT     &kp SPACE  &lqt 6 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
