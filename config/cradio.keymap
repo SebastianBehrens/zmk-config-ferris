@@ -250,7 +250,7 @@
 
 // LAYER 1
 // layernames will have the ending digit 1 if they are intended for use with MACOS
-// layernames will have the ending digit 1 if they are intended for use with WINDOWS
+// layernames will have the ending digit 2 if they are intended for use with WINDOWS
         symbol_layer1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
