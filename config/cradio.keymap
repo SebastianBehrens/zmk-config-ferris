@@ -127,6 +127,7 @@
                 , <&macro_tap &kp K>
                 , <&macro_tap &kp C>
                 , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp RIGHT>
                 ;
         };
         sql_uncomment: sql_uncomment {
