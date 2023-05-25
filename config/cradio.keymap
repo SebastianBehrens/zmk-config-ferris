@@ -39,9 +39,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <2000>;
+            tapping-term-ms = <3000>;
             quick-tap-ms = <150>;
-            bindings = <&bootloader>, <&kp>;
+            bindings = <&bootloader>, <&none>;
         };
       skq: sticky_key_quick_release {
            compatible = "zmk,behavior-sticky-key";
