@@ -99,15 +99,24 @@
           };
     };
 
-//    combos {
-//        asdf
-//        compatible = "zmk,combos";
+    combos {
+        compatible = "zmk,combos";
 //        combo_esc {
 //            timeout-ms = <50>;
 //            key-positions = <0 1>;
 //            bindings = <&kp LG(SPACE)>;
-//            };
-//    };
+            };
+        reset_left {
+            timeout-ms = <50>;
+            key-positions = <0 4 20 31>;
+            bindings = <&bootloader>;
+            };
+        reset_right {
+            timeout-ms = <50>;
+            key-positions = <5 9 29 32>;
+            bindings = <&bootloader>;
+            };
+    };
 
 //    conditional_layers {
 //        compatible = "zmk,conditional-layers";
