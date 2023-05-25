@@ -34,6 +34,15 @@
             flavor = "balanced";
             bindings = <&mo>, <&skq>;
         };
+        ht_reset: hold_tap_reset {
+            label = "hold_tap_reset";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <150>;
+            bindings = <&bootloader>, <&kp>;
+        };
       skq: sticky_key_quick_release {
            compatible = "zmk,behavior-sticky-key";
            label = "STICKY_KEY_QUICK_RELEASE";
@@ -295,8 +304,8 @@
         //│          │  {       │  [       │  (       │          │   │          │    )     │  ]       │     }    │  '       │
            &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ <        │  >       │  *       │  9       │  0       │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
-           &kp GRAVE   &kp LS(GRAVE) &kp LS(N3) &none    &kp N0         &MYTILDEMAC      &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &ht LSHIFT BSLH
+        //│ <        │  >       │  *       │  9       │          │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
+           &kp GRAVE   &kp LS(GRAVE) &kp LS(N3) &none    &none      &ht_reset 0 &MYTILDEMAC    &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &ht LSHIFT BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 13 ESCAPE &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -313,8 +322,8 @@
         //│          │ ä        │   ö      │   ü      │          │   │     -    │  4       │  5       │  6       │          │
            &caps_word      &kp SQT     &kp SEMI     &kp LBKT  &none    &kp FSLH &kp N4     &kp N5     &kp N6     &kp DOT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │     /    │  1       │   2      │    3     │          │
-            &none      &none      &none      &none      &none          &kp LS(N7)     &kp N1    &kp N2     &kp N3     &numpadcomma
+        //│          │          │          │          │   reset  │   │     /    │  1       │   2      │    3     │          │
+            &none      &none      &none      &none      &ht_reset 0 0          &kp LS(N7)     &kp N1    &kp N2     &kp N3     &numpadcomma
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &none          &kp ENTER      &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
