@@ -138,6 +138,7 @@
                 , <&macro_tap &kp K>
                 , <&macro_tap &kp U>
                 , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp RIGHT>
                 ;
         };
         numpadcomma: numpadcomma {
