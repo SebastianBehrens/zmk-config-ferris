@@ -1,0 +1,492 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  default_layer:
+  - Q
+  - W
+  - E
+  - {t: R, h: LCTRL}
+  - T
+  - Z
+  - {t: U, h: RCTRL}
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: vim_layer1}
+  - {t: D, h: OPTION}
+  - {t: F, h: CMD}
+  - {t: G, h: CMD+TAB}
+  - H
+  - {t: J, h: CMD}
+  - {t: K, h: OPTION}
+  - L
+  - '"'
+  - {t: Y, h: LSHIFT}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: -, h: LSHIFT}
+  - {t: '0', h: number_layer1}
+  - '&skq LSHIFT'
+  - {t: SPACE, h: LC(LA(LSHIFT))}
+  - {t: ESCAPE, h: symbol_layer1}
+  symbol_layer1:
+  - +
+  - '"'
+  - '#'
+  - '%'
+  - '&'
+  - '`'
+  - '/'
+  - '\'
+  - '='
+  - '^'
+  - ''
+  - '{'
+  - '['
+  - '('
+  - '@'
+  - ''
+  - ')'
+  - ']'
+  - '}'
+  - '-'
+  - '`'
+  - '<'
+  - '>'
+  - ''
+  - ''
+  - '~'
+  - '|'
+  - '?'
+  - '!'
+  - {t: $, h: LSHIFT}
+  - {t: ESCAPE, h: media_layer}
+  - TAB
+  - {t: '0', h: default_layer}
+  - {type: held}
+  number_layer1:
+  - fn_layer
+  - 'Ä'
+  - 'Ö'
+  - 'Ü'
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - '&caps_word'
+  - 'ä'
+  - ö
+  - 'ü'
+  - ''
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '/'
+  - '1'
+  - '2'
+  - '3'
+  - ', '
+  - {type: held}
+  - {t: '0', h: default_layer}
+  - ENTER
+  - '0'
+  vim_layer1:
+  - ''
+  - ''
+  - ''
+  - ''
+  - bluetooth_layer1
+  - PREV TAB
+  - PG UP
+  - ''
+  - NEXT TAB
+  - ''
+  - ''
+  - {type: held}
+  - PG DN
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - CMD+LEFT
+  - CMD+HOME
+  - CMD+END)
+  - CMD+RIGHT
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - CMD+ENTER
+  bluetooth_layer1:
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 4
+  - BT 5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - ''
+  - ''
+  - ''
+  - default_layer
+  - default_layer2
+  default_layer2:
+  - Q
+  - W
+  - E
+  - {t: R, h: LGUI}
+  - T
+  - Y
+  - {t: U, h: LGUI}
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: vim_layer2}
+  - {t: D, h: ALT}
+  - {t: F, h: CTRL}
+  - {t: G, h: ALT+TAB}
+  - H
+  - {t: J, h: CTRL}
+  - {t: K, h: ALT}
+  - L
+  - '"'
+  - {t: Z, h: SHIFT}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - '-'
+  - {t: '0', h: number_layer2}
+  - {t: SHIFT, hÅŒÅ: one_hand_layer2}
+  - SPACE
+  - {t: ESCAPE, h: symbol_layer2}
+  symbol_layer2:
+  - '+'
+  - '"'
+  - '#'
+  - '%'
+  - '&'
+  - '`'
+  - '/'
+  - '\'
+  - '='
+  - '^'
+  - ''
+  - '{'
+  - '['
+  - '('
+  - '@'
+  - ''
+  - ')'
+  - ']'
+  - '}'
+  - '-'
+  - '<'
+  - '>'
+  - '*'
+  - ''
+  - ''
+  - '~'
+  - '|'
+  - '?'
+  - '!'
+  - {t: '$', h: SHIFT}
+  - ''
+  - TAB
+  - ''
+  - {type: held}
+  number_layer2:
+  - fn_layer
+  - 'Ä'
+  - 'Ö'
+  - 'Ü'
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - '&caps_word'
+  - 'ä'
+  - ö
+  - 'ü'
+  - ''
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - ','
+  - {type: held}
+  - ''
+  - ENTER
+  - '0'
+  vim_layer2:
+  - ''
+  - ''
+  - ''
+  - ''
+  - bluetooth_layer2
+  - CTRL+SHIFT+TAB
+  - PG UP
+  - ''
+  - CTRL+TAB
+  - ''
+  - ''
+  - {type: held}
+  - PG DN
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ALT+LEFT
+  - ''
+  - ''
+  - ALT+RIGHT
+  - ''
+  - vim2_layer2
+  - ''
+  - ''
+  - '0'
+  vim2_layer2:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - HOME
+  - CTRL+END
+  - CTRL+HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  one_hand_layer2:
+  - 'UNCOMMENT SQL'
+  - 'COMMENT SQL'
+  - CTRL+ALT+S
+  - UNDO
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - Execute SQL
+  - PASTE
+  - ALT+TAB
+  - BSPC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - SPACE
+  - CUT
+  - COPY
+  - DEL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  bluetooth_layer2:
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 4
+  - BT 5
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - ''
+  - ''
+  - ''
+  - default_layer
+  - default_layer2
+  fn_layer:
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - F12
+  - F7
+  - F8
+  - F9
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - ''
+  - {type: held}
+  - TAB
+  - ''
+  - ''
+  media_layer:
+  - BRI DN
+  - BRI UP
+  - SCREENSHOT
+  - ''
+  - ''
+  - ''
+  - VOL DN
+  - MUTE
+  - VOL UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREV
+  - PP
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - TAB
+  - ''
+  - {type: held}
