@@ -29,8 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "nested_ht_with_sk";
             #binding-cells = <2>;
-            tapping-term-ms = <500>;    // <---[[moderate duration]]
-            quick-tap-ms = <-1>;
+            tapping-term-ms = <500>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&skq>;
         };
