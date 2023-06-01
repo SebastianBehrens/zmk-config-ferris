@@ -290,7 +290,7 @@
             &ht LSHIFT Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lqt_td 2 0 &skq LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
+                                            &lqt_td 2 0 &cht 15 LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -587,17 +587,17 @@
         };
 
 // LAYER 15
-        add_layerB {
+        one_hand_layer1 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &none      &none     &none      &none      &none           &none      &none     &none   &none   &to 0 
+            &none     &none &kp LG(LS(N4))      &kp LG(Y)      &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &none      &none      &none     &none       &none         &none    &none   &none    &none  &none 
+           &kp ENTER      &none      &kp LG(V) &kp LG(TAB)  &kp BSPC         &none    &none   &none    &none  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none      &none      &none      &none      &none          &none      &none    &none     &none     &none
+            &kp SPACE      &kp LG(X)      &kp LG(C)      &kp DEL      &none          &none      &none    &none     &none     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &none          &none      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
