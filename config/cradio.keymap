@@ -322,7 +322,7 @@
            &none   &kp LA(N8) &kp LA(N5) &kp LS(N8) &kp LA(G)        &none  &kp LS(N9) &kp LA(N6) &kp LA(N9) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ <        │  >       │  *       │  9       │          │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
-           &kp GRAVE   &kp LS(GRAVE) &kp LS(N3) &none    &none      &MYTILDEMAC    &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &ht LSHIFT BSLH
+           &kp GRAVE   &kp LS(GRAVE) &kp LS(N3) &none    &none      &MYTILDEMAC    &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &lt 14 ESCAPE &kp TAB   &ht_reset 0 0  &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -449,7 +449,7 @@
            &none   &kp RA(SQT) &kp RA(LBKT) &kp LS(N8) &kp RA(N2)        &none  &kp RS(N9) &kp RA(RBKT) &kp RA(NUHS) &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ <        │  >       │  *       │  9       │  0       │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
-           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none   &none         &MYTILDEWIN      &kp RA(N7)   &kp RS(MINUS) &kp RS(RBKT) &ht LSHIFT NUHS
+           &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none   &none         &MYTILDEWIN      &kp RA(N7)   &kp RS(MINUS) &kp RS(RBKT) &kp NUHS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
