@@ -614,7 +614,7 @@
             &kp A      &lt 8 S    &kp D     &kp F    &ht LA(TAB) G     &kp H      &kp J      &kp K      &kp L     &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-           &ht LSHIFT Z &kp X    &kp C       & V       &kp B          &kp N     &ht LCTRL M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
+           &ht LSHIFT Z &kp X    &kp C       &kp V       &kp B          &kp N     &ht LCTRL M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
                                             &lqt_td2 7 0 &kp LSHIFT     &kp SPACE  &lqt 6 ESCAPE
