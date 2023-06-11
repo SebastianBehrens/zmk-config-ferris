@@ -22,26 +22,6 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        lh_pht: left_hand_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <6 7 8 9 10 16 17 18 19 20 26 27 28 29 30 33 34>;    // <---[[right-hand keys]]
-        };
-        rh_pht: left_hand_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <1 2 3 4 5 11 12 13 14 15 21 22 23 24 25 31 32 >;    // <---[[left-hand keys]]
-        };
         cht: custom_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "nested_ht_with_sk";
@@ -297,13 +277,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Z       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E     &lh_pht LCTRL R &kp T          &kp Y    &rh_pht RCTRL U   &kp I      &kp O      &kp P
+            &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y    &ht RCTRL U   &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
             &kp A      &lt 3 S    &kp D      &kp F      &ht LG(TAB) G   &kp H     &kp J       &kp K     &kp L     &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-           &lh_pht LSHIFT Z &kp X &lh_pht LALT  C &lh_pht LGUI V    &kp B          &kp N     &rh_pht LGUI M  &rh_pht RALT COMMA &kp DOT &rh_pht LSHIFT FSLH
+           &ht LSHIFT Z &kp X &ht LALT  C &ht LGUI V    &kp B          &kp N     &ht LGUI M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
                                             &lqt_td 2 0 &cht 16 LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
@@ -406,13 +386,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Z       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E     &lh_pht LCTRL R &kp T          &kp Y      &rh_pht LCTRL U      &kp I      &kp O      &kp P
+            &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &ht LCTRL U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
             &kp A      &lt 9 S    &kp D       &kp F    &ht LA(TAB) G   &kp H      &kp J       &kp K     &kp L      &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-           &lh_pht LSHIFT Z &kp X &lh_pht LALT  C &lh_pht LGUI V    &kp B          &kp N     &rh_pht LGUI M  &rh_pht RALT COMMA &kp DOT &rh_pht LSHIFT FSLH
+           &ht LSHIFT Z &kp X &ht LALT  C &ht LGUI V    &kp B          &kp N     &ht LGUI M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
                                             &lqt_td2 8 0 &cht 11 LSHIFT     &kp SPACE  &lqt 7 ESCAPE
@@ -425,13 +405,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Z       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E     &lh_pht LCTRL R &kp T          &kp Y      &rh_pht LCTRL U      &kp I      &kp O      &kp P
+            &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &ht LCTRL U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
             &kp A      &lt 9 S    &kp D     &kp F    &ht LA(TAB) G     &kp H      &kp J      &kp K      &kp L     &kp LS(N2)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-           &lh_pht LSHIFT Z &kp X    &kp C       &kp V       &kp B          &kp N     &kp  M  &kp COMMA &kp DOT &rh_pht LSHIFT FSLH
+           &ht LSHIFT Z &kp X    &kp C       &kp V       &kp B          &kp N     &kp  M  &kp COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lqt_td2 8 0 &kp LSHIFT     &kp SPACE  &lqt 7 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
