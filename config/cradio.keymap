@@ -450,7 +450,7 @@
            &none      &none      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            # &kp LSHIFT   &none      &to 16      &to 5      &none          &kp LA(LEFT)      &none    &none     &kp LA(RIGHT)     &none
+           //  &kp LSHIFT   &none      &to 16      &to 5      &none          &kp LA(LEFT)      &none    &none     &kp LA(RIGHT)     &none
             &kp LSHIFT   &none      &none      &none      &none          &kp LA(LEFT)      &none    &none     &kp LA(RIGHT)     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &mo 9      &none          &none      &kp N0
