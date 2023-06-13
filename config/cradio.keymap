@@ -286,7 +286,7 @@
            &ht LSHIFT Z &kp X &ht LALT  C &ht LGUI V    &kp B          &kp N     &ht LGUI M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lqt_td 2 0 &cht 16 LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
+                                            &lqt_td 2 0 &sk LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -340,7 +340,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp LSHIFT      &none      &to 14      &none      &none          &kp LG(LEFT)      &kp LG(HOME)    &kp LG(END)     &kp LG(RIGHT)     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &kp ENTER      &kp LG(ENTER)
+                                             &none      &mo 16          &kp ENTER      &kp LG(ENTER)
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
