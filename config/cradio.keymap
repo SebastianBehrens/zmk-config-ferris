@@ -68,40 +68,40 @@
            quick-tap-ms = <125>;
            bindings = <&mo>, <&kp>;
         };
-      lqt_td: layer-quick-tap-tap-dance { 
-           compatible = "zmk,behavior-hold-tap";
-           label = "LAYER_QUICK_TAP_TAP_DANCE";
-           #binding-cells = <2>;
-           flavor = "hold-preferred";
-           tapping-term-ms = <125>;
-           quick-tap-ms = <50>;
-           bindings = <&mo>, <&td1>;
-        };
-      lqt_td2: layer-quick-tap-tap-dance2 { 
-           compatible = "zmk,behavior-hold-tap";
-           label = "LAYER_QUICK_TAP_TAP_DANCE2";
-           #binding-cells = <2>;
-           flavor = "hold-preferred";
-           tapping-term-ms = <200>;
-           quick-tap-ms = <225>;
-           bindings = <&mo>, <&td2>;
-        };
-      td1: td1 {
-           compatible = "zmk,behavior-tap-dance";
-           label = "td_left_thumb_1";
-           #binding-cells = <0>;
-           tapping-term-ms = <40>; //max time between taps
-           bindings =
-           <&kp BSPC>, <&kp LA(BSPC)>;
-          };
-      td2: td2 {
-           compatible = "zmk,behavior-tap-dance";
-           label = "td_left_thumb_2";
-           #binding-cells = <0>;
-           tapping-term-ms = <40>;
-           bindings =
-           <&kp BSPC>, <&kp LC(BSPC)>;
-          };
+//      lqt_td: layer-quick-tap-tap-dance { 
+//           compatible = "zmk,behavior-hold-tap";
+//           label = "LAYER_QUICK_TAP_TAP_DANCE";
+//           #binding-cells = <2>;
+//           flavor = "hold-preferred";
+//           tapping-term-ms = <125>;
+//           quick-tap-ms = <50>;
+//           bindings = <&mo>, <&td1>;
+//        };
+//      lqt_td2: layer-quick-tap-tap-dance2 { 
+//           compatible = "zmk,behavior-hold-tap";
+//           label = "LAYER_QUICK_TAP_TAP_DANCE2";
+//           #binding-cells = <2>;
+//           flavor = "hold-preferred";
+//           tapping-term-ms = <200>;
+//           quick-tap-ms = <225>;
+//           bindings = <&mo>, <&td2>;
+//        };
+//      td1: td1 {
+//           compatible = "zmk,behavior-tap-dance";
+//           label = "td_left_thumb_1";
+//           #binding-cells = <0>;
+//           tapping-term-ms = <40>; //max time between taps
+//           bindings =
+//           <&kp BSPC>, <&kp LA(BSPC)>;
+//          };
+//      td2: td2 {
+//           compatible = "zmk,behavior-tap-dance";
+//           label = "td_left_thumb_2";
+//           #binding-cells = <0>;
+//           tapping-term-ms = <40>;
+//           bindings =
+//           <&kp BSPC>, <&kp LC(BSPC)>;
+//          };
     };
 
 //    combos {
@@ -286,7 +286,7 @@
            &ht LSHIFT Z &kp X &ht LALT  C &ht LGUI V    &kp B          &kp N     &ht LGUI M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lqt_td 2 0 &sk LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
+                                            &ht 2 BSPC &sk LSHIFT     &ht LC(LA(LSHIFT)) SPACE  &lqt 1 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -395,7 +395,7 @@
            &ht LSHIFT Z &kp X &ht LALT  C &ht LGUI V    &kp B          &kp N     &ht LGUI M  &ht RALT COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             
-                                            &lqt_td2 8 0 &skq LSHIFT     &kp SPACE  &lqt 7 ESCAPE
+                                            &ht 8 BSPC &skq LSHIFT     &kp SPACE  &lqt 7 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
