@@ -304,7 +304,7 @@
         //│ <        │  >       │  *       │  9       │          │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
            &kp GRAVE   &kp LS(GRAVE) &kp LS(N3) &none    &none      &MYTILDEMAC    &kp LA(N7)   &kp LS(MINUS) &kp LS(RBKT) &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 14 ESCAPE &kp TAB   &ht_reset 0 0  &none 
+                                             &lt 14 LS(TAB) &kp TAB   &ht_reset 0 0  &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -431,7 +431,7 @@
         //│ <        │  >       │  *       │  9       │  0       │   │ tilde    │  pipe    │  ?       │     !    │  $       │     
            &kp NUBS   &kp LS(NUBS) &kp LS(N3) &none   &none         &MYTILDEWIN      &kp RA(N7)   &kp RS(MINUS) &kp RS(RBKT) &kp NUHS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none &kp TAB        &none      &none 
+                                             &kp LS(TAB) &kp TAB        &none      &none 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
