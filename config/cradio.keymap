@@ -413,7 +413,7 @@
         //│  Y       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
            &ht LSHIFT Z &kp X    &kp C       &kp V       &kp B          &kp N     &kp  M  &kp COMMA &kp DOT &ht LSHIFT FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lqt_td2 8 0 &kp LSHIFT     &kp SPACE  &lqt 7 ESCAPE
+                                            &lt 8 BSPC &kp LSHIFT     &kp SPACE  &lqt 7 ESCAPE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
