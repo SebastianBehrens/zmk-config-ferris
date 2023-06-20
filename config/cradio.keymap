@@ -90,7 +90,7 @@
            compatible = "zmk,behavior-tap-dance";
            label = "td_left_thumb_1";
            #binding-cells = <0>;
-           tapping-term-ms = <200>;
+           tapping-term-ms = <40>; //max time between taps
            bindings =
            <&kp BSPC>, <&kp LA(BSPC)>;
           };
@@ -98,7 +98,7 @@
            compatible = "zmk,behavior-tap-dance";
            label = "td_left_thumb_2";
            #binding-cells = <0>;
-           tapping-term-ms = <200>;
+           tapping-term-ms = <40>;
            bindings =
            <&kp BSPC>, <&kp LC(BSPC)>;
           };
