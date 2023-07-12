@@ -448,18 +448,17 @@
         };
 
 // LAYER 9
-// test commit to see github action runtime
         vim_layer2 {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
-            &kp A      &none     &none      &none      &mo 12           &kp RC(RS(TAB))      &kp PG_UP     &none   &kp RC(TAB)   &none 
+            &none      &none     &none      &none      &mo 12           &kp RC(RS(TAB))      &kp PG_UP     &none   &kp RC(TAB)   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &none      &none      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp LSHIFT   &none      &to 6      &to 5      &none       &kp LA(LEFT) &kp LA(HOME)    &kp LA(END)     &kp LA(RIGHT)  &none
+            &kp LSHIFT   &none      &to 6      &to 5      &none       &kp LA(LEFT) &kp F10    &kp F11     &kp LA(RIGHT)  &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &mo 10      &mo 11          &none      &kp N0
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
