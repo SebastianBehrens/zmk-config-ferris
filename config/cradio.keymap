@@ -622,7 +622,7 @@
            &kp N1      &kp N2      &kp N3     &kp N4       &kp U         &none    &kp LG(N4)   &none    &none  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ =   bury │ @ suspend│   │          │  flag    │   flag   │  flag    │          │
-            &none      &none      &none      &LS(LA(N7))    &kp LA(G)   &none    &kp LG(N1)    &kp LG(N2)     &kp LG(N3)     &none
+            &none      &none      &none      &kp LS(LA(N7))    &kp LA(G)   &none    &kp LG(N1)    &kp LG(N2)     &kp LG(N3)     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &kp SPACE          &none      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
