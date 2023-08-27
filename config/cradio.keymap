@@ -612,7 +612,7 @@
 // LAYER 17 add_layerB (layer for anki)
 // additional layer for one handed keyboard use
 // to use with anki
-        add_layerA {
+        add_layerB {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │         │
