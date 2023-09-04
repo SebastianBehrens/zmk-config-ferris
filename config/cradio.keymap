@@ -330,7 +330,7 @@
            &none      &none      &kp PG_DN     &none       &none         &kp LEFT    &kp DOWN   &kp UP    &kp RIGHT  &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp LSHIFT      &none      &to 16      &to 17      &none          &kp LG(LEFT)      &kp LG(HOME)    &kp LG(END)     &kp LG(RIGHT)     &none
+            &kp LSHIFT   &none     &to 16     &to 17      &none       &kp LG(LEFT) &kp LG(HOME) &kp LG(END) &kp LG(RIGHT)  &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none      &mo 15          &kp ENTER      &kp LG(ENTER)
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
