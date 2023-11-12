@@ -565,7 +565,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
 //                                                                              lights less bright  │  lights brighter       in hue in the menu
-            &none     &none      &none      &none      &none           &none    &kp LG(LC(LS(H)))      &kp LG(LC(LS(Y)))       &none      &none
+            &none     &none      &none      &none      &none           &none    &kp LG(LC(LS(H)))     &none &kp LG(LC(LS(Y)))       &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &none &kp TAB        &none      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
