@@ -95,14 +95,14 @@
 //           bindings =
 //           <&kp BSPC>, <&kp LA(BSPC)>;
 //          };
-//      td2: td2 {
-//           compatible = "zmk,behavior-tap-dance";
-//           label = "td_left_thumb_2";
-//           #binding-cells = <0>;
-//           tapping-term-ms = <40>;
-//           bindings =
-//           <&kp BSPC>, <&kp LC(BSPC)>;
-//          };
+    // tap_dance to have tab dance and q
+      td01: td01 {
+           compatible = "zmk,behavior-tap-dance";
+           #binding-cells = <0>;
+           tapping-term-ms = <150>;
+           bindings =
+           <&kp Q>, <&macro_alttab>;
+          };
     };
 
 //    combos {
@@ -373,12 +373,12 @@
 //            >;
 //        };
 
-// LAYER 5 default_layer2
-        default_layer2 {
+// LAYER 5 base_win
+        base_win {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Z       │  U       │  I       │  O       │  P       │
-            &kp Q      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &ht LCTRL U      &kp I      &kp O      &kp P
+            &td01      &kp W      &kp E     &ht LCTRL R &kp T          &kp Y      &ht LCTRL U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  "      │
             &kp A      &lt 9 S    &ht LALT D  &ht LGUI F    &ht LA(TAB) G   &kp H      &kp J       &kp K     &kp L      &kp LS(N2)
