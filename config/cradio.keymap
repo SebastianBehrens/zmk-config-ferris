@@ -258,15 +258,26 @@
             tap-ms = <0>;
             bindings = <&to 0>,  <&bt BT_SEL 2>;
         };
+        macro_alttab: macro_alttab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp TAB>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp TAB>
+                ;
+        };
     };
 
 // layernames will have the ending digit 1 if they are intended for use with MACOS
 // layernames will have the ending digit 2 if they are intended for use with WINDOWS
 
-// LAYER 0 default_layer1
     keymap {
         compatible = "zmk,keymap";
-        default_layer1 {
+
+        // LAYER 0 base_mac
+        base_mac {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Z       │  U       │  I       │  O       │  P       │
