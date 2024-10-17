@@ -586,8 +586,8 @@
         onehand_mac {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │         │
-            &none     &none &kp LG(LS(N4))      &kp LG(Y)      &none           &none      &none     &none     &none   &none
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &none     &none &kp LG(LC(LS(N4))) &kp LG(Y) &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp ENTER      &none      &kp LG(V) &kp LG(TAB)  &kp BSPC         &none    &none   &none    &none  &none
