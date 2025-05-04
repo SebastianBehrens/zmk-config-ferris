@@ -94,14 +94,6 @@
 //           bindings =
 //           <&kp BSPC>, <&kp LA(BSPC)>;
 //          };
-    // tap_dance to have tab dance and q
-      td01: td01 {
-           compatible = "zmk,behavior-tap-dance";
-           #binding-cells = <0>;
-           tapping-term-ms = <150>;
-           bindings =
-           <&kp Q>, <&macro_alttab>;
-          };
     };
 
 //    combos {
@@ -257,15 +249,22 @@
             tap-ms = <0>;
             bindings = <&to 0>,  <&bt BT_SEL 2>;
         };
-        macro_alttab: macro_alttab {
+        app_switch: app_switch {
+            label = "app_switch";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&to 0>,  <&app_switch>;
+        };
+        app_switch: app_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT>
+                = <&macro_press &kp LGUI>
                 , <&macro_tap &kp TAB>
                 , <&macro_pause_for_release>
-                , <&macro_release &kp TAB>
-                ;
+                , <&macro_release &kp LGUI>;
         };
     };
 
@@ -590,7 +589,7 @@
             &none     &none &kp LG(LC(LS(N4))) &kp LG(Y) &none           &none      &none     &none     &none   &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp ENTER      &none      &kp LG(V) &kp LG(TAB)  &kp BSPC         &none    &none   &none    &none  &none
+           &kp ENTER      &none      &kp LG(V) &app_switch  &kp BSPC         &none    &none   &none    &none  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp SPACE      &kp LG(X)      &kp LG(C)      &kp DEL      &none          &none      &none    &none     &none     &none
