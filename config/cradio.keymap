@@ -250,14 +250,6 @@
             bindings = <&to 0>,  <&bt BT_SEL 2>;
         };
         app_switch: app_switch {
-            label = "app_switch";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&to 0>,  <&app_switch>;
-        };
-        app_switch: app_switch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
