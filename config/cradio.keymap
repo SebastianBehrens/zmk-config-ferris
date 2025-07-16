@@ -281,6 +281,7 @@
 // layernames will have the ending digit 1 if they are intended for use with MACOS
 // layernames will have the ending digit 2 if they are intended for use with WINDOWS
 
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -596,7 +597,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none     &none &kp LG(LC(LS(N4))) &kp LG(Y) &none           &none      &none     &none     &none   &none 
+            &none     &none &kp LG(LC(LS(N4))) &kp LG(Y) &none           &none      &none     &none     &none   &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
            &kp ENTER      &none      &kp LG(V) &app_switch  &kp BSPC         &none    &none   &none    &none  &none
